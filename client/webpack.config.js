@@ -17,7 +17,7 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: "./index.html",
-        title: "PWA_TextEditor",
+        title: "PWA_App",
       }),
       new InjectManifest({
         swSrc: "./src-sw.js",
@@ -26,8 +26,8 @@ module.exports = () => {
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: "pwaTextEditor",
-        short_name: "pwaTextEditor",
+        name: "pwa-app",
+        short_name: "pwa-app",
         description: "Takes notes with JavaScript syntax highlighting!",
         background_color: "#225ca3",
         theme_color: "#225ca3",
